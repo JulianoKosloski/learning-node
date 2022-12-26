@@ -1,4 +1,4 @@
-const http = require('http'); //here I get http methods
+const http = require('http'); //the http module allows the creation of an http server and sending headers
 
 //define a hostname and port (default localhost is port 3000 and ip 127.0.0.1)
 const hostname = '127.0.0.1';
@@ -11,7 +11,7 @@ const server = http.createServer( (req, res) => {
     res.end('Hello, this is the smallest node program!\n');
 });
 
-//listen registers when the server starts and performs actions
+//listen registers when the server is ready and performs actions, such as logging to the console
 server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`)
 });
