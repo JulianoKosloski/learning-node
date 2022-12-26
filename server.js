@@ -11,7 +11,7 @@ const server = http.createServer( (req, res) => {
     res.end('Hello, this is the smallest node program!\n');
 });
 
-//listen registers when the server is ready and performs actions, such as logging to the console
+//listen() registers when the server is ready and performs actions, such as logging to the console
 server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`)
 });
